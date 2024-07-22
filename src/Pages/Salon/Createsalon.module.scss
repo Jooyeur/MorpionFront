@@ -1,0 +1,43 @@
+@use "../../assets/mixin" as mixin;
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  flex-direction: column;
+  color: var(--primary);
+  font-size: 40px;
+  @include mixin.xs {
+    font-size: 25px;
+  }
+}
+
+.titre {
+  font-size: 50px;
+}
+
+.gamebtn {
+  color: var(--primary);
+  background-color: var(--secondary);
+  font-family: var(--font-family);
+  border: none;
+  margin-top: 100px;
+  border-radius: 7px;
+  height: 80px;
+  font-size: 40px;
+  align-items: center;
+  width: 250px;
+  justify-content: center;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(0.9);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}

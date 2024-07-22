@@ -1,0 +1,172 @@
+@use "../../assets/mixin" as mixin;
+
+.titre {
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 50px;
+  @include mixin.xs {
+    font-size: 40px;
+  }
+}
+
+.alignhome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.alignretry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.homepagebtn {
+  color: var(--primary);
+  background-color: var(--secondary);
+  font-family: var(--font-family);
+  border: none;
+  border-radius: 7px;
+  height: 60px;
+  font-size: 40px;
+  align-items: center;
+  width: 200px;
+  justify-content: center;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(0.9);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.retrybtn {
+  color: var(--primary);
+  background-color: var(--secondary);
+  font-family: var(--font-family);
+  border: none;
+  border-radius: 7px;
+  height: 60px;
+  font-size: 40px;
+  align-items: center;
+  width: 200px;
+  justify-content: center;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(0.9);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: var(--background);
+  border: 1px solid var(--primary);
+  font-size: 30px;
+  height: 100px;
+  text-align: center;
+  width: 100px;
+}
+
+.boardrow {
+  display: flex;
+  justify-content: center;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: bolder;
+}
+
+.scoreboard {
+  color: var(--primary);
+  background-color: var(--secondary);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  h2 {
+    background-color: var(--secondary);
+    margin-bottom: 10px;
+  }
+  p {
+    background-color: var(--secondary);
+    margin: 5px;
+  }
+}
+
+.alignscore {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown {
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.aligncountdown {
+  display: flex;
+  justify-content: center;
+}
+
+.cancelbtn {
+  display: flex;
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.floor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}

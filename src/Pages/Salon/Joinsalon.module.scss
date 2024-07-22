@@ -1,0 +1,86 @@
+@use "../../assets/mixin" as mixin;
+
+.gamebtn {
+  color: var(--primary);
+  background-color: var(--secondary);
+  font-family: var(--font-family);
+  border: none;
+  margin-bottom: 50px;
+  border-radius: 7px;
+  height: 80px;
+  font-size: 40px;
+  align-items: center;
+  width: 250px;
+  justify-content: center;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(0.9);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+  color: var(--primary);
+}
+
+.salonid {
+  background-color: white;
+  color: var(--primary);
+  font-family: var(--font-family);
+  font-size: 20px;
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: none;
+}
+
+.homepagebtn {
+  color: var(--primary);
+  background-color: var(--secondary);
+  font-family: var(--font-family);
+  border: none;
+  border-radius: 7px;
+  height: 60px;
+  font-size: 40px;
+  align-items: center;
+  width: 200px;
+  justify-content: center;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(0.9);
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.txtalign {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.titre {
+  margin-bottom: 30px;
+  font-size: 50px;
+  margin-top: 60px;
+  @include mixin.xs {
+    font-size: 40px;
+  }
+}
