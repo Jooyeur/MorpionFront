@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import io from "socket.io-client";
+import { io } from "socket.io-client";
 import styles from "./Createsalon.module.scss";
 
 const socket = io("http://localhost:4000");
